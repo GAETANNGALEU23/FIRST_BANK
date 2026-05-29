@@ -14,7 +14,7 @@
 ========================================================================
 """
 
-import streamlit as st
+imp streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
