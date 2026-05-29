@@ -69,50 +69,7 @@ USERS = {
         "hash": _hash("DG@Reseau2024"),
         "role": "user",
         "nom": "Directeur Général Réseau",
-        "agence": None,          # Accès toutes agences
-    },
-    "hippodrome": {
-        "hash": _hash("Hippo@AFB2024"),
-        "role": "user",
-        "nom": "Responsable Hippodrome",
-        "agence": "FIRST BANK HIPPODROME",
-    },
-    "bastos": {
-        "hash": _hash("Bastos@AFB2024"),
-        "role": "user",
-        "nom": "Responsable Bastos",
-        "agence": "FIRST BANK BASTOS",
-    },
-    "bonanjo": {
-        "hash": _hash("Bonanjo@AFB2024"),
-        "role": "user",
-        "nom": "Responsable Bonanjo",
-        "agence": "FIRST BANK BONANJO",
-    },
-    "maroua": {
-        "hash": _hash("Maroua@AFB2024"),
-        "role": "user",
-        "nom": "Responsable Maroua",
-        "agence": "FIRST BANK MAROUA",
-    },
-    "mendong": {
-        "hash": _hash("Mendong@AFB2024"),
-        "role": "user",
-        "nom": "Responsable Mendong",
-        "agence": "FIRST BANK MENDONG",
-    },
-    "analyste": {
-        "hash": _hash("Analyste@AFB2024"),
-        "role": "user",
-        "nom": "Analyste Qualité",
-        "agence": None,          # Accès toutes agences (lecture)
-    },
-}
-
-# ============================================================
-# 3. BASE DE DONNÉES SQLITE — JOURNAL D'ACTIVITÉ
-# ============================================================
-def init_db():
+      
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("""
